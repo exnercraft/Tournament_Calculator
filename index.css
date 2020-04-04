@@ -1,0 +1,31 @@
+body{
+	background-color: #f1dcb9;
+}
+
+.bar {
+    width: 100%;
+    margin-top: 25px;
+    border:solid 5px;
+}
+.form {
+    width: 90%;
+    margin: auto;
+}
+
+input {
+    font-size: 70px;
+    width: 100%;
+}
+.littleText {
+    width: 24%;
+    display: inline-block;
+}
+label {
+    font-size: 70px;
+    display: block;
+    text-align: center;
+}
+button {
+    font-size: 70px;
+    width: 100%;
+}

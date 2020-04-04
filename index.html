@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="form">
+			<div class="bar">
+				<input type="text" id="players" placeholder="Players">
+			</div>
+			<div class="bar">
+				<input type="text" id="rounds" placeholder="Rounds">
+			</div>
+
+			<div class="bar">
+				<div class="littleText">
+					<label>Win</label>
+				</div>
+				<div class="littleText">
+					<label>Lose</label>
+				</div>
+				<div class="littleText">
+					<label>Tie</label>
+				</div>
+				<div class="littleText">
+					<label>Total</label>
+				</div>
+			</div>
+			<div id="rows">
+				<div class="bar">
+					<div id="row_1" class="littleText">
+						<input id="win_1" type="text">
+					</div>
+					<div class="littleText">
+						<input id="lose_1" type="text">
+					</div>
+					<div class="littleText">
+						<input id="tie_1" type="text">
+					</div>
+					<div class="littleText">
+						<label id="total_1">-</label>
+					</div>
+				</div>
+			</div>
+			<div class="bar">
+				<div class="littleText">
+					<button id="addRow">+</button>
+				</div>
+				<div class="littleText">
+					<button id="removeRow">-</button>
+				</div>
+				<div class="littleText">
+					<label>Total:</label>
+				</div>
+				<div class="littleText">
+					<label id="totalFinal">0</label>
+				</div>
+			</div>
+			<div class="bar">
+				<button id="calculate">Calculate</button>
+			</div>
+
+
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>
