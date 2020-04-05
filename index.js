@@ -19,13 +19,12 @@ function addRow () {
 	row.classList.add("bar");
 
 	row.innerHTML = `<div class="littleText">
-						<input id="win_${elements}" type="text">
+						<input id="win_${elements}" type="number">
 					</div>
 					<div class="littleText">
-						<input id="lose_${elements}" type="text">
+						<input id="lose_${elements}" type="number">
 					</div>
 					<div class="littleText">
-						<input id="tie_${elements}" type="text">
 					</div>
 					<div class="littleText">
 						<label id="total_${elements}">-</label>
@@ -51,10 +50,9 @@ function calculate() {
 	for (var i = 1; i <= elements; i++) {
 		let win = Number(document.getElementById("win_"+i).value);
 		let lose = Number(document.getElementById("lose_"+i).value);
-		let tie = Number(document.getElementById("tie_"+i).value);
 
-		if(win + lose + tie == rounds) {
-			let total = factorial(rounds)/(factorial(win)*factorial(lose)*factorial(tie)) * players / Math.pow(3, rounds);
+		if(win + lose == rounds) {
+			let total = factorial(rounds)/(factorial(win)*factorial(lose)) * players / Math.pow(2, rounds);
 			document.getElementById("total_"+i).innerHTML = total.toFixed(3);
 			totalFinal += total;
 		}else {
